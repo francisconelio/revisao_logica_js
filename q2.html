@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+</head>
+
+Primeira nota: <input id="nota1" type="number"></br>
+Segunda  nota:<input id="nota2" type="number"> <br />
+Terceira nota: <input id="nota3" type="number"> <br />
+Quarta  nota: <input id="nota4" type="number"> <br />
+<button onclick="media()">Calcular Media</button>
+
+<script>
+
+ function media(){
+  var nota1 = parseFloat(document.getElementById("nota1").value);
+  var nota2 = parseFloat(document.getElementById("nota2").value);
+  var nota3 = parseFloat(document.getElementById("nota3").value);
+  var nota4 = parseFloat(document.getElementById("nota4").value);
+
+
+  var media = (nota1 + nota2 + nota3 + nota4)/4 ;
+
+  if(media < 7)
+  alert("Recuperação!")
+   else if(media==7)
+    alert("Na média!");
+   else if ( media > 7 && media<=9.4)
+    alert("Teve um bom aproveitamento"+media);
+  else if(media>=9.5)
+   alert("Aceita ser monitor ?!")
+
+ }
+</script>
+
+</head>
+</html
